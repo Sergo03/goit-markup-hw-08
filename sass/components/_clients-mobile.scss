@@ -1,0 +1,123 @@
+/* clients */
+
+.clients-title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 60px;
+  //   padding-top: 94px;
+  margin-bottom: 50px;
+}
+.clients-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  //   padding-bottom: 94px;
+  justify-content: center;
+  &-item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+  &-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  //   &-item:nth-child(2n + 1) {
+  //     margin-left: 15px;
+  //   }
+  //   &-item:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+}
+
+.icon-clients-link {
+  display: flex;
+  width: 210px;
+  //   width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $secondary-text-color;
+  }
+  &:hover .icon-clients-logo1,
+  &:focus .icon-clients-logo1 {
+    fill: $secondary-text-color;
+  }
+  &:hover .icon-clients-logo2,
+  &:focus .icon-clients-logo2 {
+    fill: $secondary-text-color;
+  }
+  &:hover .icon-clients-logo3,
+  &:focus .icon-clients-logo3 {
+    fill: $secondary-text-color;
+  }
+  &:hover .icon-clients-logo4,
+  &:focus .icon-clients-logo4 {
+    fill: $secondary-text-color;
+  }
+  &:hover .icon-clients-logo5,
+  &:focus .icon-clients-logo5 {
+    fill: $secondary-text-color;
+  }
+  &:hover .icon-clients-logo6,
+  &:focus .icon-clients-logo6 {
+    fill: $secondary-text-color;
+  }
+}
+
+.icon-clients-logo1 {
+  width: 44.27px;
+  height: 49.23px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients-logo2 {
+  width: 40px;
+  height: 52px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients-logo3 {
+  width: 41px;
+  height: 42.6px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients-logo4 {
+  width: 79.66px;
+  height: 42.02px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients-logo5 {
+  width: 59px;
+  height: 47px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients-logo6 {
+  width: 88.48px;
+  height: 45.44px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* end-clients */
