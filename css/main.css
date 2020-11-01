@@ -29,11 +29,23 @@ img {
   display: block;
 }
 
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: solid red 1px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+/* outline: 2px solid red; */
 .page-header {
   position: relative;
-  padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 15px;
   border-bottom: 1px solid #ececec;
 }
 
