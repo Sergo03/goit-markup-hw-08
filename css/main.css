@@ -30,33 +30,53 @@ img {
 }
 
 .container {
-  margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: solid red 1px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
-/* outline: 2px solid red; */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .page-header {
   position: relative;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+  }
 }
 
-.logo {
-  color: #2196f3;
-  text-decoration: none;
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-bottom: 25px;
+    padding-top: 24px;
+  }
 }
 
 .header-logo {
@@ -66,7 +86,17 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  margin-right: 276px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo {
+    margin-right: 276px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .menu-button {
@@ -94,24 +124,42 @@ img {
   fill: #2196f3;
 }
 
-.menu-container {
-  display: none;
-  background-color: #ffffff;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border-top: 1px solid #ececec;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 140px;
-  padding-right: 140px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
 }
 
-.menu-container.is-open {
-  display: block;
+.logo {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ececec;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 140px;
+    padding-right: 140px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
 }
 
 .site-nav {
@@ -120,14 +168,6 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-
-.site-nav .item {
-  margin-bottom: 40px;
-}
-
-.site-nav .item:last-child {
-  margin-bottom: 60px;
 }
 
 .site-nav .link {
@@ -140,6 +180,26 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .item {
+    margin-bottom: 40px;
+  }
+  .site-nav .item:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: inline-flex;
+    margin-left: 83px;
+    margin-right: 84px;
+  }
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .current-link {
@@ -187,12 +247,26 @@ img {
   color: #2196f3;
 }
 
-.contacts-list:last-child {
-  margin-bottom: 0px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts-list:last-child {
+    margin-bottom: 0px;
+  }
+  .contacts-list {
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-size: 18px;
+    line-height: 1.16;
+  }
 }
 
-.contacts-list {
-  margin-bottom: 16px;
+@media screen and (max-width: 1199px) {
+  .contacts {
+    display: block;
+  }
+  .contacts-list {
+    font-size: 12px;
+    line-height: 1.14;
+  }
 }
 
 .icon-contacts-envelope {
@@ -204,12 +278,28 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-contacts-envelope {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .icon-contacts-smartphone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-contacts-smartphone {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .link:hover .icon-contacts-envelope,
