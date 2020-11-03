@@ -26,8 +26,8 @@
           </svg>
         </button>
         <!--Навигация-->
-        <div class="menu-container" id="menu-container" data-menu>  
-          
+        <div class="menu-container" id="menu-container" data-menu>
+
           <ul class="site-nav">
             <li class="item">
               <a href="./index.html" class="current-link">Студия</a>
@@ -37,10 +37,10 @@
             </li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-          
+
 
           <!--Контакты-->
-         
+
           <ul class="contacts">
             <li class="contacts-list">
               <a href="mailto:info@devstudio.com" class="link">
@@ -57,7 +57,7 @@
                 +38 096 111 11 11</a>
             </li>
           </ul>
-         
+
         </div>
 
       </nav>
@@ -65,16 +65,16 @@
   </header>
   <main>
     <!--Герои-->
-     <section class="hero"> 
+    <section class="hero">
       <div class="container-hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-open-modal>
           Заказать услугу
         </button>
       </div>
-    </section> 
+    </section>
     <!--Особенности-->
-     <section class="features"> 
+    <section class="features">
       <div class="container">
         <h2 hidden>Особенности</h2>
         <ul class="features-list">
@@ -108,32 +108,41 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
     <!--чем мы занимаемся-->
-     <section class="work"> 
+    <section class="work">
       <div class="container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-item">
-            <img src="./img/work/img.jpg" alt="человек работает за компьютером" width="370" height="294" />
+
+            <img srcset="
+            ./img/work/img-desktop.jpg 1x, 
+            ./img/work/img-desktop@2x.jpg 2x"
+              src="./img/work/img-desktop.jpg" alt="человек работает за компьютером" width="370" height="294" />
 
             <p class="label">Десктопные приложения</p>
           </li>
           <li class="work-item">
-            <img src="./img/work/img1.jpg" alt="человек работает за ноутбуком" width="370" height="294" />
+            <img srcset="
+            ./img/work/img-desktop2.jpg 1x, 
+            ./img/work/img-desktop2@2x.jpg 2x"
+              src="./img/work/img-desktop2.jpg" alt="человек работает за ноутбуком" width="370" height="294" />
 
             <p class="label">Мобильные приложения</p>
           </li>
           <li class="work-item">
-            <img src="./img/work/img2.jpg" alt="человек работает за планшетом" width="370" height="294" />
-
+            <img srcset="
+            ./img/work/img-desktop3.jpg 1x, 
+            ./img/work/img-desktop3@2x.jpg 2x"
+              src="./img/work/img-desktop3.jpg" alt="человек работает за планшетом" width="370" height="294" />
             <p class="label">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
     <!--команда-->
-     <section class="team"> 
+    <section class="team">
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
@@ -173,7 +182,7 @@
             </ul>
           </li>
           <li class="team-item">
-            <img  src="./img/team/developer.jpg" alt="женщина в черном пиджаке улыбается" width="270" height="260" />
+            <img src="./img/team/developer.jpg" alt="женщина в черном пиджаке улыбается" width="270" height="260" />
             <h3 class="team-name">Ольга Репина</h3>
             <p class="team-profession" lang="en">Frontend Developer</p>
             <ul class="icon-team-list">
@@ -279,9 +288,9 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
     <!-- Клиенты -->
-     <section class="clients"> 
+    <section class="clients">
       <div class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -319,10 +328,10 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
   </main>
   <!--адрес-->
-   <footer class="footer"> 
+  <footer class="footer">
     <div>
       <a href="./index.html" class="footer-logo" lang="en">
         <span class="logo-web">Web</span>Studio</a>
@@ -380,9 +389,9 @@
           <use href="./img/sprite.svg#icon-telegram"></use>
         </svg></button>
     </form>
-  </footer> 
+  </footer>
   <!-- modal -->
-   <div class="backdrop is-hidden" data-backdrop>
+  <div class="backdrop is-hidden" data-backdrop>
     <div class="modal">
 
       <button class="btn-modal" data-close-modal><span class="circle-modal"><svg class="btn-svg">
@@ -423,13 +432,13 @@
           <span class="label-modal">Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a></span>
         </label>
-    
+
         <div class="div-submit">
           <button type="submit" class="submit-button">Отправить</button>
         </div>
     </div>
     </form>
-  </div> 
+  </div>
   </div>
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
