@@ -118,24 +118,24 @@
 
             <img srcset="
             ./img/work/img-desktop.jpg 1x, 
-            ./img/work/img-desktop@2x.jpg 2x"
-              src="./img/work/img-desktop.jpg" alt="человек работает за компьютером" width="370" height="294" />
+            ./img/work/img-desktop@2x.jpg 2x" src="./img/work/img-desktop.jpg" alt="человек работает за компьютером"
+              width="370" height="294" />
 
             <p class="label">Десктопные приложения</p>
           </li>
           <li class="work-item">
             <img srcset="
             ./img/work/img-desktop2.jpg 1x, 
-            ./img/work/img-desktop2@2x.jpg 2x"
-              src="./img/work/img-desktop2.jpg" alt="человек работает за ноутбуком" width="370" height="294" />
+            ./img/work/img-desktop2@2x.jpg 2x" src="./img/work/img-desktop2.jpg" alt="человек работает за ноутбуком"
+              width="370" height="294" />
 
             <p class="label">Мобильные приложения</p>
           </li>
           <li class="work-item">
             <img srcset="
             ./img/work/img-desktop3.jpg 1x, 
-            ./img/work/img-desktop3@2x.jpg 2x"
-              src="./img/work/img-desktop3.jpg" alt="человек работает за планшетом" width="370" height="294" />
+            ./img/work/img-desktop3@2x.jpg 2x" src="./img/work/img-desktop3.jpg" alt="человек работает за планшетом"
+              width="370" height="294" />
             <p class="label">Дизайнерские решения</p>
           </li>
         </ul>
@@ -147,7 +147,13 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">
-            <img src="./img/team/designer.jpg" alt="мужчина в красной рубашке смеется" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/desktop1.jpg 1x, ./img/team/desktop1@2x.jpg 2x " media="(min-width:1200px)">
+              <source srcset="./img/team/tablet1.jpg 1x, ./img/team/tablet1@2x.jpg 2x " media="(min-width:768px)">
+              <source srcset="./img/team/mob1.jpg 1x, ./img/team/mob1@2x.jpg 2x" media="(min-width:480px)">
+              <img src="./img/team/desktop1.jpg" alt="мужчина в красной рубашке смеется" />
+            </picture>
+
             <h3 class="team-name">Игорь Демьяненко</h3>
             <p class="team-profession" lang="en">Product Designer</p>
             <ul class="icon-team-list">
@@ -182,7 +188,13 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./img/team/developer.jpg" alt="женщина в черном пиджаке улыбается" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/desktop2.jpg 1x, ./img/team/desktop2@2x.jpg 2x " media="(min-width:1200px)">
+              <source srcset="./img/team/tablet2.jpg 1x, ./img/team/tablet2@2x.jpg 2x " media="(min-width:768px)">
+              <source srcset="./img/team/mob2.jpg 1x, ./img/team/mob2@2x.jpg 2x" media="(min-width:480px)">
+              <img src="./img/team/desktop2.jpg" alt="женщина в черном пиджаке улыбается" />
+            </picture>
+
             <h3 class="team-name">Ольга Репина</h3>
             <p class="team-profession" lang="en">Frontend Developer</p>
             <ul class="icon-team-list">
@@ -217,7 +229,13 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./img/team/marketing.jpg" alt="мужчина в голубой рубашке улыбается" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/desktop3.jpg 1x, ./img/team/desktop3@2x.jpg 2x " media="(min-width:1200px)">
+              <source srcset="./img/team/tablet3.jpg 1x, ./img/team/tablet3@2x.jpg 2x " media="(min-width:768px)">
+              <source srcset="./img/team/mob3.jpg 1x, ./img/team/mob3@2x.jpg 2x" media="(min-width:480px)">
+              <img src="./img/team/desktop3.jpg" alt="мужчина в голубой рубашке улыбается" />
+            </picture>
+
             <h3 class="team-name">Николай Тарасов</h3>
             <p class="team-profession" lang="en">Marketing</p>
             <ul class="icon-team-list">
@@ -252,7 +270,14 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./img/team/ui-designer.jpg" alt="мужчина в черной футболке улыбается" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/desktop4.jpg 1x, ./img/team/desktop4@2x.jpg 2x " media="(min-width:1200px)">
+              <source srcset="./img/team/tablet4.jpg 1x, ./img/team/tablet4@2x.jpg 2x " media="(min-width:768px)">
+              <source srcset="./img/team/mob4.jpg 1x, ./img/team/mob4@2x.jpg 2x" media="(min-width:480px)">
+
+              <img src="./img/team/desktop4.jpg" alt="мужчина в черной футболке улыбается" />
+            </picture>
+
             <h3 class="team-name">Михаил Ермаков</h3>
             <p class="team-profession" lang="en">UI Designer</p>
             <ul class="icon-team-list">
@@ -332,53 +357,55 @@
   </main>
   <!--адрес-->
   <footer class="footer">
-    <div>
-      <a href="./index.html" class="footer-logo" lang="en">
-        <span class="logo-web">Web</span>Studio</a>
-      <address>
-        <ul class="contacts-footer">
-          <li class="footer-list">
-            <a href="https://goo.gl/maps/JRe7u6xurZRfVsGd8" target="_blank" class="link-adress">г. Киев, пр-т Леси
-              Украинки, 26
-            </a>
+    <div class="div-contacts">
+      <div>
+        <a href="./index.html" class="footer-logo" lang="en">
+          <span class="logo-web">Web</span>Studio</a>
+        <address>
+          <ul class="contacts-footer">
+            <li class="footer-list">
+              <a href="https://goo.gl/maps/JRe7u6xurZRfVsGd8" target="_blank" class="link-adress">г. Киев, пр-т Леси
+                Украинки, 26
+              </a>
+            </li>
+            <li class="footer-list">
+              <a href="mailto:info@example.com" class="link">info@example.com</a>
+            </li>
+            <li class="footer-list">
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="div-footer-social">
+        <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="footer-icon-list">
+          <li class="footer-icon-item">
+            <a href="" class="footer-icon-link">
+              <svg class="footer-icon">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg></a>
           </li>
-          <li class="footer-list">
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
+          <li class="footer-icon-item">
+            <a href="" class="footer-icon-link">
+              <svg class="footer-icon">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg></a>
           </li>
-          <li class="footer-list">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          <li class="footer-icon-item">
+            <a href="" class="footer-icon-link">
+              <svg class="footer-icon">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg></a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="" class="footer-icon-link">
+              <svg class="footer-icon">
+                <use href="./img/sprite.svg#linkedin"></use>
+              </svg></a>
           </li>
         </ul>
-      </address>
-    </div>
-    <div class="div-footer-social">
-      <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-      <ul class="footer-icon-list">
-        <li class="footer-icon-item">
-          <a href="" class="footer-icon-link">
-            <svg class="footer-icon">
-              <use href="./img/sprite.svg#instagram"></use>
-            </svg></a>
-        </li>
-        <li class="footer-icon-item">
-          <a href="" class="footer-icon-link">
-            <svg class="footer-icon">
-              <use href="./img/sprite.svg#twitter"></use>
-            </svg></a>
-        </li>
-        <li class="footer-icon-item">
-          <a href="" class="footer-icon-link">
-            <svg class="footer-icon">
-              <use href="./img/sprite.svg#facebook"></use>
-            </svg></a>
-        </li>
-        <li class="footer-icon-item">
-          <a href="" class="footer-icon-link">
-            <svg class="footer-icon">
-              <use href="./img/sprite.svg#linkedin"></use>
-            </svg></a>
-        </li>
-      </ul>
+      </div>
     </div>
     <form action="#" method="GET" class="mailing-form">
       <div class="div-footer-mailing">
@@ -387,7 +414,8 @@
       </div>
       <button type="submit" class="button-mailing">Подписаться<svg class="mailing-icon">
           <use href="./img/sprite.svg#icon-telegram"></use>
-        </svg></button>
+        </svg>
+      </button>
     </form>
   </footer>
   <!-- modal -->
