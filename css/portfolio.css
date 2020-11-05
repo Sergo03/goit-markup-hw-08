@@ -458,6 +458,9 @@ img {
   .portfolio-item:last-child {
     margin-bottom: 0px;
   }
+  .portfolio-item:first-child {
+    height: 405px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
