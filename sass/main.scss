@@ -7,17 +7,11 @@
 @import './base/container';
 
 //  components
-@import './components/header-mobile';
-@import './components/hero-mobile';
-// @import './components/header';
-// @import './components/hero';
+@import './components/header';
+@import './components/hero';
 @import './components/modal';
-@import './components/features-mobile';
-// @import './components/features';
+@import './components/features';
 @import './components/work';
-@import './components/team-mobile';
-@import './components/clients-mobile';
-@import './components/footer-mobile';
-// @import './components/team';
-// @import './components/clients';
-// @import './components/footer';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';

@@ -362,14 +362,39 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .button-list {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .button-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    padding-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .button-container {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .button-container {
     margin-bottom: 15px;
   }
+}
+
+@media screen and (min-width: 480px) {
   .button-div {
     display: flex;
-    padding-bottom: 40px;
   }
   .button-div .button-list-item:last-child {
     margin-right: 0px;
@@ -416,11 +441,23 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-item {
   width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .portfolio-item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -434,13 +471,11 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio-item {
+    margin-right: 30px;
     width: 370px;
   }
   .portfolio-item:nth-child(3n) {
     margin-right: 0px;
-  }
-  .portfolio-item:nth-child(-n + 3) {
-    margin-top: 34px;
   }
   .portfolio-item:nth-last-child(-n + 3) {
     margin-bottom: 0px;
@@ -514,7 +549,6 @@ img {
   display: block;
   background-color: #2f303a;
   margin: 0 auto;
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -525,7 +559,13 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     width: 768px;
   }
@@ -595,7 +635,7 @@ img {
   .footer {
     display: flex;
     align-items: baseline;
-    min-width: 1200px;
+    max-width: 1600px;
   }
 }
 

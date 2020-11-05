@@ -1,66 +1,29 @@
 /*footer*/
 .footer {
-  display: block;
-  @media screen and (max-width: 1199px) {
-    text-align: center;
-  }
-
+  display: flex;
+  align-items: baseline;
   background-color: #2f303a;
-  margin: 0 auto;
-  width: 480px;
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 1154px;
   padding-top: 60px;
   padding-bottom: 60px;
-
   &-list:not(:last-child) {
-    margin-bottom: 8px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
-    }
+    margin-bottom: 9px;
   }
-  @media screen and (max-width: 1199px) {
-    &-list:last-child {
-      margin-bottom: 60px;
-    }
-  }
-
   &-logo {
     display: block;
     color: #ffffff;
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
-
+    font-size: 26px;
+    line-height: 1.19;
     margin-bottom: 20px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .div-contacts {
-      display: flex;
-      justify-content: center;
-    }
-    .div-footer-social {
-      margin-left: 165px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .footer-container {
-      display: flex;
-      align-items: baseline;
-    }
-  }
-
   &-title {
     font-weight: 700;
     font-size: 14px;
@@ -69,40 +32,17 @@
     color: $primary-white-color;
     margin-bottom: 20px;
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    min-width: 1200px;
-    // padding-left: 215px;
-    // padding-right: 1154px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .div-contacts {
-    display: flex;
-    align-items: baseline;
-  }
 }
 
 .contacts-footer {
   display: block;
-
-  @media screen and (min-width: 1200px) {
-    width: 231px;
-  }
-
+  width: 231px;
   list-style-type: none;
   & .link {
     list-style-type: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-
-    @media screen and (min-width: 1200px) {
-      line-height: 1.71;
-    }
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
@@ -113,12 +53,7 @@
     list-style-type: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
-
-    @media screen and (min-width: 1200px) {
-      line-height: 1.14;
-    }
-
+    line-height: 1.14;
     color: $primary-white-color;
     text-decoration: none;
     font-style: normal;
@@ -139,12 +74,10 @@
 }
 
 /* social-footer */
-
-@media screen and (min-width: 1200px) {
-  .div-footer-social {
-    margin-left: 70px;
-  }
+.div-footer-social {
+  padding-left: 70px;
 }
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -170,24 +103,19 @@
   &-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 60px;
-    }
   }
 }
-/* mailing-footer */
 
-@media screen and (min-width: 1200px) {
-  .mailing-form {
-    display: flex;
-    &:last-child {
-      align-items: flex-end;
-    }
+/* mailing-footer */
+.mailing-form {
+  display: flex;
+  &:last-child {
+    align-items: flex-end;
   }
-  .div-footer-mailing {
-    margin-left: 93px;
-  }
+}
+
+.div-footer-mailing {
+  margin-left: 93px;
 }
 .mailing-title {
   font-weight: 700;
@@ -199,16 +127,8 @@
   text-transform: uppercase;
 }
 .input-mailing {
-  width: 450px;
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
-
+  width: 358px;
   height: 50px;
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-  }
-
   padding-left: 16px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -220,6 +140,9 @@
 }
 
 .button-mailing {
+  display: flex;
+  align-items: center;
+
   position: relative;
   font-weight: 700;
   font-size: 16px;
@@ -230,8 +153,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   border-radius: 4px;
-  padding-right: 33px;
 
+  padding-left: 29px;
   border: 0px;
 
   width: 200px;
