@@ -1,13 +1,13 @@
 // // utils
-// @import './utils/variables';
+@import './utils/variables';
 
 // // base
-// @import './base/common';
-// @import './base/container';
+@import './base/common';
+@import './base/container';
 
 // // components
-// @import './components/header';
-// @import './base/container-portfolio';
-// @import './components/filter';
-// @import './components/gallery';
-// @import './components/footer';
+@import './components/header-mobile';
+// @import './base/container';
+@import './components/filter';
+@import './components/gallery';
+@import './components/footer-mobile';

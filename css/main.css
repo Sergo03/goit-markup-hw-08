@@ -1182,8 +1182,7 @@ img {
 .footer {
   display: block;
   background-color: #2f303a;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1245,6 +1244,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -1258,9 +1264,7 @@ img {
   .footer {
     display: flex;
     align-items: baseline;
-    width: 1600px;
-    padding-left: 215px;
-    padding-right: 1154px;
+    min-width: 1200px;
   }
 }
 

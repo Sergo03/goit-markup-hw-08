@@ -1,10 +1,26 @@
-/*list-button*/
 .button-list {
+  padding-top: 60px;
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  &-item:not(:last-child) {
+  &-item {
     margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .button-container {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .button-div {
+    display: flex;
+    padding-bottom: 40px;
+    .button-list-item:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
