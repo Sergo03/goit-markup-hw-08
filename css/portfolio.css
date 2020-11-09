@@ -564,13 +564,13 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
-    width: 480px;
+    max-width: 767px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    width: 768px;
+    max-width: 1199px;
   }
 }
 

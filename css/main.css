@@ -356,7 +356,7 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container-hero {
     padding: 118px 60px;
-    max-width: 480px;
+    max-width: 767px;
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -373,7 +373,7 @@ img {
 @media screen and (min-width: 768px) {
   .container-hero {
     padding: 118px 204px;
-    max-width: 768px;
+    max-width: 1199px;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1196,13 +1196,13 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
-    width: 480px;
+    max-width: 767px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    width: 768px;
+    max-width: 1199px;
   }
 }
 
